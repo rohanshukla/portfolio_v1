@@ -9,5 +9,20 @@ module.exports = {
   name: 'Rohan Shukla',
   location: 'Mumbai, India',
   email: 'errohanshukla@gmail.com',
-  github: 'https://github.com/shuklarohan'
+  github: 'https://github.com/shuklarohan',
+
+  navLinks: [
+    {
+      name: 'About',
+    },
+    {
+      name: 'Experience',
+    },
+    {
+      name: 'Work',
+    },
+    {
+      name: 'Contact',
+    },
+  ],
 };
