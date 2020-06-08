@@ -3,9 +3,11 @@ title: 'About Me'
 avatar: './me.jpg'
 skills:
   - JavaScript (ES6+)
-  - Node.js
   - HTML & (S)CSS
+  - Node.js
   - React
+  - MongoDB
+  - PostgreSQL
 ---
 
 Hello! I'm Rohan, a Software Engineer based in Mumbai, India.

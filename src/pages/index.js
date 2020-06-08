@@ -4,12 +4,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Menu from "../components/menu"
 import Hero from "../components/hero"
+import About from "../components/about"
 
 const IndexPage = ({ location, data }) => {
   return (
     <Layout>
       <Menu />
       <Hero data={data.hero.edges} />
+      <About data={data.about.edges} />
     </Layout>
   )
 }
@@ -26,6 +28,17 @@ export const pageQuery = graphql`
             name
             subtitle
             buttonText
+          }
+          html
+        }
+      }
+    }
+    about: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/about/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            skills
           }
           html
         }
