@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 const About = ({ data }) => {
     const { frontmatter, html } = data[0].node;
@@ -15,6 +16,7 @@ const About = ({ data }) => {
                     })
                 }
             </ol>
+            <Img fluid={frontmatter.avatar.childImageSharp.fluid} />
         </div>
     )
 }

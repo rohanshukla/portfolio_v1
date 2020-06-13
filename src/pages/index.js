@@ -39,6 +39,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             skills
+            avatar {
+              childImageSharp {
+                fluid(maxWidth: 700, quality: 100, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
           }
           html
         }
