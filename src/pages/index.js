@@ -41,7 +41,8 @@ export const pageQuery = graphql`
             skills
             avatar {
               childImageSharp {
-                fluid(maxWidth: 700, quality: 100, traceSVG: { color: "#64ffda" }) {
+                fluid(maxWidth: 700, quality: 100, traceSVG: { color: "rgb(56, 47, 92)", threshold: 75 }
+                      toFormat: JPG) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
