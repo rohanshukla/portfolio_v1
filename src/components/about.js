@@ -16,7 +16,7 @@ const About = ({ data }) => {
                     })
                 }
             </ol>
-            <Img fluid={frontmatter.avatar.childImageSharp.fluid} />
+            <Img fluid={frontmatter.avatar.childImageSharp.fluid} alt="Avatar" />
         </div>
     )
 }
