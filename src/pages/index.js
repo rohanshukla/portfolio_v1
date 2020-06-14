@@ -1,11 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Menu from "../components/menu"
-import Hero from "../components/hero"
-import About from "../components/about"
-import Seo from "../components/Seo"
+import { Layout, Seo, Menu, Hero, About } from "../components"
 
 const IndexPage = ({ location, data }) => {
   return (
