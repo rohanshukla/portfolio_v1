@@ -5,9 +5,12 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: config.siteUrl,
+    author: config.name,
     description: config.siteDescription,
+    keywords: config.siteKeywords
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

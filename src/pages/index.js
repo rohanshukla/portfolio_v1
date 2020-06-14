@@ -5,10 +5,12 @@ import Layout from "../components/layout"
 import Menu from "../components/menu"
 import Hero from "../components/hero"
 import About from "../components/about"
+import Seo from "../components/Seo"
 
 const IndexPage = ({ location, data }) => {
   return (
     <Layout>
+      <Seo />
       <Menu />
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
