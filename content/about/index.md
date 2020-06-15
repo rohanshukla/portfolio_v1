@@ -8,6 +8,9 @@ skills:
   - React
   - MongoDB
   - PostgreSQL
+  - Firebase
+  - Python
+  - GraphQL
 ---
 
 Hello! I'm Rohan, a Software Engineer based in Mumbai, India.
