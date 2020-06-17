@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
         
     }
     body {
-        
+        font-family: ${({ theme }) => theme.fonts.main}
     }
 `
 
