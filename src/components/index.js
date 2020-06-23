@@ -1,6 +1,8 @@
 export { default as Layout } from "./layout"
 export { default as Seo } from "./seo"
 export { default as Menu } from "./menu"
+export { default as Navbar } from "./navbar"
+export { default as Burger } from "./burger"
 export { default as Hero } from "./hero"
 export { default as About } from "./about"
 export { default as Lottie } from "./lottie"
