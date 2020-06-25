@@ -54,6 +54,9 @@ const LinkItems = styled(Link)`
     text-decoration: none;
     color: inherit;
     font-size: ${({ theme }) => theme.fontSizes.lg};
+    ${respondTo.lg`
+        font-size: ${({ theme }) => theme.fontSizes.md};
+    `}
 `
 
 const Navbar = ({ open, setOpen }) => {
