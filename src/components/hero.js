@@ -31,28 +31,29 @@ const Content = styled.div`
         font-size: 40px;
         margin-top: 5px;
         ${respondTo.sm`
-            font-size: 55px;
+            font-size: 60px;
         `}
         ${respondTo.md`
-            font-size: 65px;
+            font-size: 70px;
         `}
     }
     h2 {
         color: ${({ theme }) => theme.colors.green};
-        font-size: ${({ theme }) => theme.fontSizes.smish};
-        letter-spacing: 2.5px;
+        font-size: ${({ theme }) => theme.fontSizes.sm};
+        font-weight: normal;
+        letter-spacing: 2.2px;
         margin: 5px 0;
         ${respondTo.md`
-            font-size: ${({ theme }) => theme.fontSizes.sm};
+            font-size: ${({ theme }) => theme.fontSizes.md};
         `}
     }
     h3 {
         font-size: 40px;
         ${respondTo.sm`
-            font-size: 55px;
+            font-size: 60px;
         `}
         ${respondTo.md`
-            font-size: 65px;
+            font-size: 70px;
         `}
     }
 `
@@ -60,14 +61,21 @@ const AboutContainer = styled.div`
     width: 100%;
     p {
         margin-top: 30px;
-        font-size: 16.5px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     ${respondTo.sm`
         width: 70%;
+        p {
+            font-size: 17.5px;
+        }
     `}
     ${respondTo.md`
         width: 50%;
+        p {
+            font-size: 17.5px;
+        }
     `}
 `
 

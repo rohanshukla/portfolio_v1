@@ -6,7 +6,7 @@ const BG = '#0a192f';
 
 export default {
     fonts: {
-        main: "Muli, roboto mono"
+        main: "Lato, sans-serif"
     },
     colors: {
         darkNavy: DARK_BG,

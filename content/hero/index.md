@@ -5,4 +5,4 @@ subtitle: 'I build things for the web.'
 buttonText: 'Get In Touch'
 ---
 
-I'm a Software Engineer based in Mumbai, India who is specialized in building websites, applications, and everything in between.
+I'm a Software Engineer based in Mumbai, India who is specialized in building websites, web applications and everything in between.
