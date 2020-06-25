@@ -1,8 +1,8 @@
 import { hex2rgba } from "../utils"
 
-const ACCENT = '#64ffda';
-const DARK_BG = '#020c1b';
-const BG = '#0a192f';
+const ACCENT = '#52fad2';
+const DARK_BG = '#010a17';
+const BG = '#09182e';
 
 export default {
     fonts: {

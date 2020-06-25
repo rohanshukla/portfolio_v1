@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import Theme from "../styles/theme"
 
 const SEO = ({ title, description, meta, lang }) => {
     const { site } = useStaticQuery(
@@ -66,6 +67,10 @@ const SEO = ({ title, description, meta, lang }) => {
                     name: `twitter:description`,
                     content: metaDescription,
                 },
+                {
+                    name: `theme-color`,
+                    content: Theme.colors.background
+                }
             ].concat({ name: `keywords`, content: metaKeyword.join(",") })}
         />
     )
