@@ -27,7 +27,7 @@ const Content = styled.div`
     justify-content: center;
 
     h1 {
-        color: #FFF;
+        color: ${({ theme }) => theme.colors.lightestSlate};
         font-size: 40px;
         margin-top: 5px;
         ${respondTo.sm`
