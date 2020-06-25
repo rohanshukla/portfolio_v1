@@ -43,6 +43,9 @@ const Container = styled.ul`
         margin: 15px 0;
         ${respondTo.md`
             padding: 0 15px;
+            &:hover {
+            color: ${({ theme }) => theme.colors.green};
+            }
         `}
     }
 `
@@ -50,6 +53,7 @@ const Container = styled.ul`
 const LinkItems = styled(Link)`
     text-decoration: none;
     color: inherit;
+    font-size: ${({ theme }) => theme.fontSizes.lg};
 `
 
 const Navbar = ({ open, setOpen }) => {
