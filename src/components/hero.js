@@ -31,7 +31,7 @@ const Content = styled.div`
         `}
     }
     h2 {
-        color: ${({ theme }) => theme.colors.green};
+        color: ${({ theme }) => theme.colors.accent};
         font-size: ${({ theme }) => theme.fontSizes.sm};
         font-weight: normal;
         letter-spacing: 2.2px;

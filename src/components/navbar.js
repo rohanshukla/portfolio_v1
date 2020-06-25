@@ -8,7 +8,7 @@ const Container = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: column nowrap;
-    background-color: ${({ theme }) => theme.colors.lightNavy};
+    background-color: ${({ theme }) => theme.colors.lightBackground};
     position: fixed;
     top: 0;
     right: 0;
@@ -44,7 +44,7 @@ const Container = styled.ul`
         ${respondTo.md`
             padding: 0 15px;
             &:hover {
-            color: ${({ theme }) => theme.colors.green};
+            color: ${({ theme }) => theme.colors.accent};
             }
         `}
     }
