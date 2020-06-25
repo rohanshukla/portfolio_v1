@@ -12,14 +12,7 @@ const Container = styled.div`
     align-items: center;
 `
 
-const Header = styled.header`
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    ${respondTo.sm`
-        grid-template-columns: repeat(2, 1fr);
-    `} */
-`
+const Header = styled.header``
 
 const Content = styled.div`
     display: flex;
@@ -57,6 +50,7 @@ const Content = styled.div`
         `}
     }
 `
+
 const AboutContainer = styled.div`
     width: 100%;
     p {
