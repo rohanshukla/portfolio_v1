@@ -46,6 +46,7 @@ const Content = styled.div`
 const Image = styled(Img)`
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     ${respondTo.sm`
         width: 350px;
         height: 350px;
