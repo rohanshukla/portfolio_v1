@@ -41,6 +41,7 @@ const Container = styled.ul`
 
     li {
         margin: 15px 0;
+        color: ${({ theme }) => theme.colors.lightestSlate};
         ${respondTo.md`
             padding: 0 15px;
             &:hover {

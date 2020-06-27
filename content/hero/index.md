@@ -1,8 +1,8 @@
 ---
-title: 'Hi, my name is'
-name: 'Rohan Shukla'
-subtitle: 'I build things for the web.'
-buttonText: 'Get In Touch'
+title: Hi, my name is
+name: Rohan Shukla
+subtitle: I like building web applications
+buttonText: Get In Touch
 ---
 
-I'm a Software Engineer based in Mumbai, India who is specialized in building websites, web applications and everything in between.
+I'm a Software Engineer based in Mumbai, India who is specialized in building websites, web applications, mobile apps and everything that lives on the internet.

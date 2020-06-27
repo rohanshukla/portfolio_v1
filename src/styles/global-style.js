@@ -19,7 +19,9 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.colors.background};
         color: ${({ theme }) => theme.colors.slate};
         line-height: 1.3;
-        font-family: ${({ theme }) => theme.fonts.main}
+        font-family: ${({ theme }) => theme.fonts.main};
+
+        /* background: repeating-linear-gradient(to right, #010a17, #010a17 5px, #09182e 5px, #09182e 20px); */
     }
 `
 

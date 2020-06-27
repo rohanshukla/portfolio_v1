@@ -20,13 +20,13 @@ const Content = styled.div`
 
     h1 {
         color: ${({ theme }) => theme.colors.lightestSlate};
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 5px;
         ${respondTo.sm`
-            font-size: 60px;
+            font-size: 55px;
         `}
         ${respondTo.md`
-            font-size: 70px;
+            font-size: 65px;
         `}
     }
     h2 {
@@ -40,12 +40,12 @@ const Content = styled.div`
         `}
     }
     h3 {
-        font-size: 40px;
+        font-size: 35px;
         ${respondTo.sm`
-            font-size: 60px;
+            font-size: 55px;
         `}
         ${respondTo.md`
-            font-size: 70px;
+            font-size: 65px;
         `}
     }
 `

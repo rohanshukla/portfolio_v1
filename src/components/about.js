@@ -55,7 +55,7 @@ const Image = styled(Img)`
 
 const Skills = styled.ul`
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 210px));
+    grid-template-columns: repeat(2, minmax(150px, 200px));
     overflow: hidden;
     list-style-position: inside;
     list-style-type: none;

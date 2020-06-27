@@ -1,20 +1,21 @@
 ---
-title: 'About Me'
-avatar: './me.jpg'
+title: About Me
+avatar: ./me.jpg
 skills:
   - JavaScript (ES6+)
-  - HTML & (S)CSS
-  - Node.js
-  - React
   - MongoDB
+  - HTML & (S)CSS
   - PostgreSQL
-  - Firebase
-  - Python
+  - Node.js
+  - Express.js
+  - React
   - GraphQL
+  - React Native
+  - Firebase
 ---
 
 Hello! I'm Rohan, a Software Engineer based in Mumbai, India.
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+I am passionate about building excellent software that improves the lives of those around me. My goal is to always build a product that makes a difference.
 
 Here are a few technologies I've been working with recently:
