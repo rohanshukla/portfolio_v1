@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { respondTo } from "../styles/_respondTo"
+import { email } from "../config"
 
 const Container = styled.div`
     width: 90%;
@@ -72,6 +73,18 @@ const AboutContainer = styled.div`
     `}
 `
 
+const EmailLink = styled.a`
+    background-color: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.accent};
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.accent};
+    font-size: ${({ theme }) => theme.fontSizes.md};
+    border-radius: 3px;
+    margin: 40px 0;
+    padding: 15px 20px;
+    align-self: flex-start;
+`
+
 const Hero = ({ data }) => {
     const { frontmatter, html } = data[0].node;
     return (
@@ -82,6 +95,7 @@ const Hero = ({ data }) => {
                     <h1>{frontmatter.name}</h1>
                     <h3>{frontmatter.subtitle}</h3>
                     <AboutContainer dangerouslySetInnerHTML={{ __html: html }} />
+                    <EmailLink href={`mailto:${email}`}>Stay Connected</EmailLink>{/* Stay Connected, Stay In Touch */}
                 </Content>
             </Header>
         </Container>

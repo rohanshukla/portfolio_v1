@@ -25,7 +25,6 @@ export const pageQuery = graphql`
             title
             name
             subtitle
-            buttonText
           }
           html
         }
