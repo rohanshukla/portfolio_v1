@@ -33,6 +33,13 @@ const Content = styled.div`
         &:nth-child(2) {
             margin: 10px 0;
         }
+        &:nth-child(3) {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: ${({ theme }) => theme.colors.accent};
+        }
     }
 
     ${respondTo.sm`
@@ -44,8 +51,8 @@ const Content = styled.div`
 `
 
 const Image = styled(Img)`
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
     border-radius: 50%;
     ${respondTo.sm`
         width: 350px;
