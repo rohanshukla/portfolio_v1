@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import { respondTo } from "../styles/_respondTo"
+import InlineLink from "../styles/inlineLink"
 
 const Container = styled.section`
     width: 90%;
@@ -37,8 +38,7 @@ const Content = styled.div`
             margin: 10px 0;
         }
         a {
-            text-decoration: none;
-            color: ${({ theme }) => theme.colors.accent};
+            ${InlineLink}
         }
     }
 
