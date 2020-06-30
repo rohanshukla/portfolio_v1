@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Layout, Seo, Menu, Hero, About } from "../components"
+import { Layout, Seo, Menu, Hero, About, Footer } from "../components"
 
 const IndexPage = ({ location, data }) => {
   return (
@@ -10,6 +10,7 @@ const IndexPage = ({ location, data }) => {
       <Menu />
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
+      <Footer />
     </Layout>
   )
 }

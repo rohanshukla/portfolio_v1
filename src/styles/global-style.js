@@ -23,6 +23,13 @@ const GlobalStyles = createGlobalStyle`
 
         /* background: repeating-linear-gradient(to right, #010a17, #010a17 5px, #09182e 5px, #09182e 20px); */
     }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+        vertical-align: middle;
+    }
 `
 
 export default GlobalStyles
