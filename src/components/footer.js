@@ -46,7 +46,6 @@ const Menu = () => {
             .then(response => response.json())
             .then(json => {
                 const { stargazers_count, forks_count } = json;
-                console.log(stargazers_count, forks_count);
                 setRepoInfo({
                     stars: stargazers_count,
                     forks: forks_count,
