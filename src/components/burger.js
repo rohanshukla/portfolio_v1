@@ -6,9 +6,6 @@ import { Navbar } from "./"
 const Container = styled.div`
     width: 2rem;
     height: 2rem;
-    position: fixed;
-    top: 16px;
-    right: 18px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;

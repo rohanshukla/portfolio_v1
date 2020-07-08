@@ -1,15 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import { Layout, Seo, Menu, Hero, About, Footer } from "../components"
+
+const ContentWrapper = styled.div`
+  margin-top: 75px;
+`
 
 const IndexPage = ({ location, data }) => {
   return (
     <Layout>
       <Seo />
       <Menu />
-      <Hero data={data.hero.edges} />
-      <About data={data.about.edges} />
+      <ContentWrapper>
+        <Hero data={data.hero.edges} />
+        <About data={data.about.edges} />
+      </ContentWrapper>
       <Footer />
     </Layout>
   )
