@@ -4,8 +4,6 @@ import { respondTo } from "../styles/_respondTo"
 import { email } from "../config"
 
 const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
     padding: 20px 0;
     min-height: 100vh;
     display: flex;

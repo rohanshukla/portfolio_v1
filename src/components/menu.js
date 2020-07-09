@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { Burger } from "./"
+import Logo from "../../static/logo.svg"
 
 const Container = styled.nav`
-    width: 100%;
+    width: 90%;
     height: 75px;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +15,9 @@ const Container = styled.nav`
     top: ${({ visible }) => visible ? '0' : '-75px'};
     z-index: 20;
     transition: top 0.5s;
-    .logo {
-
-    }
+`
+const LogoImage = styled.img`
+    height: 35px;
 `
 
 class Menu extends Component {
@@ -59,9 +59,7 @@ class Menu extends Component {
     render() {
         return (
             <Container visible={this.state.visible}>
-                <div>
-
-                </div>
+                <LogoImage src={Logo} alt="Logo" />
                 <Burger />
             </Container>
         )

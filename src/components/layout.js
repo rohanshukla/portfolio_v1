@@ -1,11 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types"
+import styled from "styled-components"
+
+const Container = styled.div`
+    width: 90%;
+    margin: 0 auto;
+`
 
 const Layout = ({ children }) => {
     return (
-        <div id="root">
+        <Container id="root">
             {children}
-        </div>
+        </Container>
     )
 }
 

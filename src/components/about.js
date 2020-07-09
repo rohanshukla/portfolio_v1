@@ -5,8 +5,6 @@ import { respondTo } from "../styles/_respondTo"
 import InlineLink from "../styles/inlineLink"
 
 const Container = styled.section`
-    width: 90%;
-    margin: 0 auto;
     padding: 20px 0;
     min-height: 100vh;
     display: grid;
