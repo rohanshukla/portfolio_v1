@@ -44,6 +44,14 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true,
+        anonymize: true,
+      },
+    },
   ],
 }
