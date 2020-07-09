@@ -1,12 +1,29 @@
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { FormattedIcon } from "./icons"
+import { socialLinks } from "../config"
 
 const Container = styled.footer`
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 25px 0;
 `
+const SocialContainer = styled.div`
+    margin: 30px 0;
+    svg {
+        margin: 0 10px;
+        height: 18px;
+        width: auto;
+        color: ${({ theme }) => theme.colors.lightSlate};
+        :hover {
+            color: ${({ theme }) => theme.colors.accent};
+        }
+    }
+`
+
 const RepoLink = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.lightSlate};
@@ -56,6 +73,19 @@ const Menu = () => {
 
     return (
         <Container>
+            <SocialContainer>
+                {
+                    socialLinks.map((social) => (
+                        <OutboundLink
+                            key={social.name}
+                            href={social.url}
+                            target="_blank"
+                            rel="nofollow noopener noreferrer">
+                            <FormattedIcon name={social.name} />
+                        </OutboundLink>
+                    ))
+                }
+            </SocialContainer>
             <RepoLink
                 href="https://github.com/shuklarohan/portfolio_v1"
                 target="_blank"

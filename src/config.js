@@ -30,4 +30,19 @@ module.exports = {
       url: '/#contact',
     }
   ],
+
+  socialLinks: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/shuklarohan'
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/shuklarohan/'
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/rohanshukla'
+    }
+  ]
 };
