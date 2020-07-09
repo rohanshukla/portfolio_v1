@@ -24,14 +24,18 @@ class Menu extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            prevScrollpos: window.pageYOffset,
+            prevScrollpos: 0,
             visible: true
         };
     }
 
     // Adds an event listener when the component is mount.
     componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
+        this.setState({
+            prevScrollpos: window.pageYOffset
+        }, () => {
+            window.addEventListener("scroll", this.handleScroll);
+        });
     }
 
     // Remove the event listener when the component is unmount.
