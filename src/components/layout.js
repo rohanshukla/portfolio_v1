@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import GlobalStyles from "../../src/styles/global-style"
 
 const Container = styled.div`
     width: 90%;
@@ -10,6 +11,7 @@ const Container = styled.div`
 const Layout = ({ children }) => {
     return (
         <Container id="root">
+            <GlobalStyles />
             {children}
         </Container>
     )
