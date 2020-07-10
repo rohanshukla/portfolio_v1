@@ -44,5 +44,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/rohanshukla'
     }
-  ]
+  ],
+
+  colors: {
+    darkBG: '#010a17',
+    background: '#09182e'
+  }
 };

@@ -53,5 +53,18 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Rohan Shukla',
+        short_name: 'Rohan Shukla',
+        start_url: '/',
+        background_color: config.colors.darkBG,
+        theme_color: config.colors.background,
+        display: 'standalone',
+        icon: 'static/me.jpg',
+      },
+    },
+    `gatsby-plugin-offline`
   ],
 }
