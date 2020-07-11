@@ -79,7 +79,7 @@ const EmailLink = styled.a`
     font-size: ${({ theme }) => theme.fontSizes.md};
     border-radius: 3px;
     margin: 40px 0;
-    padding: 15px 20px;
+    padding: 15px;
     align-self: flex-start;
 `
 

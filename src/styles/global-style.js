@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     html {
-        
+        scroll-behavior: smooth;
     }
     body {
         margin: 0;

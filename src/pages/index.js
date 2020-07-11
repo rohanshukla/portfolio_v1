@@ -10,7 +10,7 @@ const ContentWrapper = styled.div`
 
 const IndexPage = ({ location, data }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <Seo />
       <Menu />
       <ContentWrapper>

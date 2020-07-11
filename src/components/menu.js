@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import { Burger } from "./"
 import Logo from "../../static/logo.svg"
@@ -16,6 +17,11 @@ const Container = styled.nav`
     z-index: 20;
     transition: top 0.5s;
 `
+const LinkItems = styled(Link)`
+    text-decoration: none;
+    color: inherit;
+`
+
 const LogoImage = styled.img`
     height: 35px;
 `
@@ -59,7 +65,9 @@ class Menu extends Component {
     render() {
         return (
             <Container visible={this.state.visible}>
-                <LogoImage src={Logo} alt="Logo" />
+                <LinkItems to="/">
+                    <LogoImage src={Logo} alt="Logo" />
+                </LinkItems>
                 <Burger />
             </Container>
         )

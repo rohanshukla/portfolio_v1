@@ -41,9 +41,6 @@ const Content = styled.div`
     }
 
     ${respondTo.sm`
-        width: 70%;
-    `}
-    ${respondTo.md`
         width: 100%;
     `}
 `
@@ -51,7 +48,7 @@ const Content = styled.div`
 const Image = styled(Img)`
     width: 80%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     ${respondTo.sm`
         width: 350px;
         height: 350px;
@@ -68,6 +65,7 @@ const Skills = styled.ul`
 
 const List = styled.li`
     margin: 3px 0;
+    font-size: ${({ theme }) => theme.fontSizes.sm};
     &:before {
         content: '☆'; /* ⚝ ✩ ✭ */
         line-height: 12px;
@@ -79,7 +77,7 @@ const List = styled.li`
 const About = ({ data }) => {
     const { frontmatter, html } = data[0].node;
     return (
-        <Container>
+        <Container id="about">
             <AboutContainer>
                 <h2>{frontmatter.title}</h2>
                 <Content dangerouslySetInnerHTML={{ __html: html }} />
