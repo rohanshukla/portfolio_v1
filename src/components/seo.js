@@ -70,14 +70,6 @@ const SEO = ({ title, description, meta, lang }) => {
                 {
                     name: `theme-color`,
                     content: Theme.colors.background
-                },
-                {
-                    name: `google-site-verification`,
-                    content: "KNtovSFe68Jv42C8XgT_RKutwIfFpbYqWhsPpdXJg-k"
-                },
-                {
-                    name: `google-site-verification`,
-                    content: "-QVSZXk_YY2N4WUyS_0VVeCCjEJ41Tz2flzHFyFJBUc"
                 }
             ].concat({ name: `keywords`, content: metaKeyword.join(",") })}
         />
