@@ -3,8 +3,10 @@ startDate: '2017-08-01'
 company: XDev Studios
 title: Software Developer
 location: Mumbai, India
-duration: August 2017 - September 2019
+duration: Aug 2017 - Sep 2019
 url: http://xdevstudios.com
 ---
 
-I'm a Software Engineer based in Mumbai, India who is specialized in building websites, web applications, mobile apps and everything that lives on the internet.
+Built modern, performant, and robust backend API services for diverse array of projects. 
+
+Provide input to the Development team regarding key features, solutions gap’s, and desired enhancements.

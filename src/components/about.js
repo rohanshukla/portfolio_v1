@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import { respondTo } from "../styles/_respondTo"
 import InlineLink from "../styles/inlineLink"
+import Heading from "../styles/Heading"
 
 const Container = styled.section`
     padding: 20px 0;
@@ -19,10 +20,7 @@ const Container = styled.section`
 `
 
 const AboutContainer = styled.div`
-    h2 {
-        color: ${({ theme }) => theme.colors.lightestSlate};
-        margin-bottom: 30px;
-    }
+    
 `
 
 const Content = styled.div`
@@ -79,7 +77,7 @@ const About = ({ data }) => {
     return (
         <Container id="about">
             <AboutContainer>
-                <h2>{frontmatter.title}</h2>
+                <Heading>{frontmatter.title}</Heading>
                 <Content dangerouslySetInnerHTML={{ __html: html }} />
                 <Skills>
                     {
