@@ -87,7 +87,7 @@ const Menu = () => {
                 }
             </SocialContainer>
             <RepoLink
-                href="https://github.com/shuklarohan/portfolio_v1"
+                href="https://github.com/rohanshukla/portfolio_v1"
                 target="_blank"
                 rel="nofollow noopener noreferrer">
                 <div>Built by Rohan Shukla</div>

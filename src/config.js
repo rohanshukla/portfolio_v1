@@ -9,7 +9,7 @@ module.exports = {
   name: 'Rohan Shukla',
   location: 'Mumbai, India',
   email: 'errohanshukla@gmail.com',
-  github: 'https://github.com/shuklarohan',
+  github: 'https://github.com/rohanshukla',
   googleAnalyticsID: 'UA-172173386-1',
 
   navLinks: [
@@ -34,7 +34,7 @@ module.exports = {
   socialLinks: [
     {
       name: 'GitHub',
-      url: 'https://github.com/shuklarohan'
+      url: 'https://github.com/rohanshukla'
     },
     {
       name: 'Linkedin',

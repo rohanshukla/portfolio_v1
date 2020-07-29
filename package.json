@@ -6,7 +6,7 @@
   "author": {
     "name": "Rohan Shukla",
     "email": "errohanshukla@gmail.com",
-    "url": "https://github.com/shuklarohan"
+    "url": "https://github.com/rohanshukla"
   },
   "license": "MIT",
   "scripts": {
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shuklarohan/portfolio_v1"
+    "url": "https://github.com/rohanshukla"
   }
 }
