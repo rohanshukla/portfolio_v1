@@ -10,3 +10,5 @@ url: http://xdevstudios.com
 Built modern, performant, and robust backend API services for diverse array of projects. 
 
 Provide input to the Development team regarding key features, solutions gap’s, and desired enhancements.
+
+Built and deployed Web Applications for E-Commerce Platform, Job Portal and Investment Banking web app.
