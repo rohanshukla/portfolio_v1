@@ -1,7 +1,7 @@
 ---
 startDate: '2019-10-01'
 company: Raw Engineering
-title: Application Engineer
+title: Sr. Application Engineer
 location: Mumbai, India
 duration: Oct 2019 - Present
 url: https://www.raweng.com/

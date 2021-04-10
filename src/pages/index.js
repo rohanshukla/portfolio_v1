@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import { Layout, Seo, Menu, Hero, About, Experience, Footer } from "../components"
+import { Layout, Seo, Menu, Hero, About, Experience, Project, Footer } from "../components"
 
 const ContentWrapper = styled.div`
   margin-top: 75px;
@@ -17,6 +17,7 @@ const IndexPage = ({ location, data }) => {
         <Hero data={data.hero.edges} />
         <About data={data.about.edges} />
         <Experience data={data.experience.edges} />
+        <Project data={data.projects.edges} />
       </ContentWrapper>
       <Footer />
     </Layout>
@@ -68,6 +69,25 @@ export const pageQuery = graphql`
             location
             duration
             url
+          }
+          html
+        }
+      }
+    }
+    projects: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: {regex: "/projects/"}
+        frontmatter: { show: { ne: false } }
+      }, 
+      sort: {fields: [frontmatter___date], order: DESC}
+      ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            github
+            url
+            tech
           }
           html
         }

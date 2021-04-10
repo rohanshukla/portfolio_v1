@@ -8,11 +8,11 @@ const Heading = styled.h2`
         display: inline-block;
         content: "";
         border-top: 1px solid ${({ theme }) => theme.colors.lightestBackground};
-        width: 8rem;
+        width: 9rem;
         margin: auto 1rem;
         transform: translateY(-0.5rem);
         ${respondTo.md`
-            width: 16rem;
+            width: 21rem;
         `}
     }
 `

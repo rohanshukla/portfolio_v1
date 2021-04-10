@@ -11,7 +11,7 @@ export default {
     colors: {
         darkBG: DARK_BG,
         background: BG,
-        lightBackground: '#172a45',
+        lightBackground: '#112240',
         lightestBackground: '#303C55',
         slate: '#8892b0',
         lightSlate: '#a8b2d1',
