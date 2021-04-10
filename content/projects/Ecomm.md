@@ -9,4 +9,4 @@ tech:
 show: true
 ---
 
-E-Commerce Website demo built with Expressjs, Reactjs and hosted on Firebase cloud. The web app also supports for Admin Panel and have the feature of responsive UI on all device type.
+Website demo built and deployed on Firebase cloud. The web app also supports for Admin Panel and responsive UI on all device type.

@@ -27,6 +27,9 @@ const ProjectContainer = styled.div`
 `
 
 const ProjectItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     background-color: ${({ theme }) => theme.colors.lightBackground};
     color: ${({ theme }) => theme.colors.accent};
@@ -73,7 +76,7 @@ const StyledProjectDescription = styled.div`
 `;
 
 const ProjectTech = styled.div`
-    margin: 25px 0;
+    margin-top: 25px;
     span {
         margin: 0 10px 0 0;
         font-size: 13.5px;   
@@ -107,8 +110,10 @@ const Project = ({ data }) => {
                                         </a>}
                                     </div>
                                 </Icons>
-                                <StyledProjectName>{title}</StyledProjectName>
-                                <StyledProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
+                                <>
+                                    <StyledProjectName>{title}</StyledProjectName>
+                                    <StyledProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
+                                </>
                                 <ProjectTech>
                                     {
                                         tech.map((data, index) => {
