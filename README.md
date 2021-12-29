@@ -1,7 +1,7 @@
 <div align="center">
   <img alt="Logo" src="./static/logo.svg" width="100" />
 </div>
-<h1 align="center">Rohan Shukla</h1>
+<h1 align="center"><a href="https://rohanshukla.netlify.app" target="_blank" rel="nofollow noopener noreferrer">Rohan Shukla</a></h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1fa99441-8bd6-4020-9a3d-91f2d1dfdcf7/deploy-status)](https://app.netlify.com/sites/rohanshukla/deploys)
 
