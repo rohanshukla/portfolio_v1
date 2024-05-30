@@ -1,12 +1,21 @@
-import React from "react"
-import { graphql } from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
-import { Layout, Seo, Menu, Hero, About, Experience, Project, Footer } from "../components"
+import {
+  Layout,
+  Seo,
+  Menu,
+  Hero,
+  About,
+  Experience,
+  Project,
+  Footer,
+} from '../components';
 
 const ContentWrapper = styled.div`
   margin-top: 75px;
-`
+`;
 
 const IndexPage = ({ location, data }) => {
   return (
@@ -21,8 +30,8 @@ const IndexPage = ({ location, data }) => {
       </ContentWrapper>
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
 export default IndexPage;
 
@@ -40,7 +49,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    about: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/about/" } }) {
+    about: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/about/" } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -48,8 +59,12 @@ export const pageQuery = graphql`
             skills
             avatar {
               childImageSharp {
-                fluid(maxWidth: 700, quality: 100, traceSVG: { color: "rgb(56, 47, 92)", threshold: 75 }
-                      toFormat: JPG) {
+                fluid(
+                  maxWidth: 700
+                  quality: 100
+                  traceSVG: { color: "rgb(56, 47, 92)", threshold: 75 }
+                  toFormat: JPG
+                ) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
@@ -59,7 +74,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    experience: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/jobs/"}}, sort: {fields: [frontmatter___startDate], order: DESC}) {
+    experience: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+      sort: { fields: [frontmatter___startDate], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
@@ -76,11 +94,11 @@ export const pageQuery = graphql`
     }
     projects: allMarkdownRemark(
       filter: {
-        fileAbsolutePath: {regex: "/projects/"}
+        fileAbsolutePath: { regex: "/projects/" }
         frontmatter: { show: { ne: false } }
-      }, 
-      sort: {fields: [frontmatter___date], order: DESC}
-      ) {
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {
@@ -94,4 +112,4 @@ export const pageQuery = graphql`
       }
     }
   }
-  `;
+`;
