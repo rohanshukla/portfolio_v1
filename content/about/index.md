@@ -3,6 +3,7 @@ title: About Me
 avatar: ./me.jpg
 skills:
   - JavaScript (ES6+)
+  - TypeScript
   - MongoDB
   - HTML & (S)CSS
   - PostgreSQL
@@ -12,6 +13,7 @@ skills:
   - GraphQL
   - React Native
   - Firebase
+  - Figma
 ---
 
 Hello! I'm Rohan, a Software Engineer based in Mumbai, India.
