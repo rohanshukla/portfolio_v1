@@ -7,8 +7,8 @@ duration: Aug 2017 - Sep 2019
 url: http://xdevstudios.com
 ---
 
-Built modern, performant, and robust backend API services for diverse array of projects. 
+Build, style, and ship high quality websites, mobile apps, and cross platform digital experiences for a diverse array of clients using technologies such as JavaScript, Nodejs, React, MongoDB, PostgreSQL, Firebase.
 
-Provide input to the Development team regarding key features, solutions gap’s, and desired enhancements.
+Created numerous backend API services with a modern, reliable, and performant architecture.
 
-Built and deployed Web Applications for E-Commerce Platform, Job Portal and Investment Banking web app.
+Provide input to the development team regarding key features, solution gap’s, and desired enhancements.

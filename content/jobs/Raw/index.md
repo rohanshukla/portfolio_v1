@@ -7,8 +7,10 @@ duration: Oct 2019 - Oct 2021
 url: https://www.raweng.com/
 ---
 
-Built Micro-Frontend architecture using Single-Spa Framework and customized webpack v5.8.
+Lead the development and architecture of platform like content management systems, REST APIs, and continuous integration pipelines to fulfill business requirement.
 
-Building generic and reusable React components using Styled Components and redux as global state management tool for Digital Fan Experience Platform (DFEP) sports team app. 
+Built and shipped reusable React components using the custom hooks and used Redux toolkit as global state management.
 
-Writing unit test code for individual react components with the help of Jest and Enzyme.
+Revamped the frontend to new design with React v17 and migrated existing API endpoint to Nest.js architecture.
+
+Cached the backend APIs using Fastly servers to reduce server costs, manage load balancers, and enhance edge network performance.
