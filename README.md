@@ -8,6 +8,7 @@
 My Personal Portfolio Website built with [Gatsby](https://www.gatsbyjs.org/) and hosted with [Netlify](https://www.netlify.com/)
 
 ## Tech Stack
+
 - [Gatsby](https://www.gatsbyjs.org/)
 - [React](https://reactjs.org/)
 - [Styled-components](https://styled-components.com/)
