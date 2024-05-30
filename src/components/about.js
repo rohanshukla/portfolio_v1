@@ -1,9 +1,10 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { respondTo } from '../styles/_respondTo';
 import InlineLink from '../styles/inlineLink';
 import Heading from '../styles/Heading';
+
+import AvatarImage from '../../content/about/me.jpg';
 
 const Container = styled.section`
   padding: 20px 0;
@@ -42,7 +43,7 @@ const Content = styled.div`
     `}
 `;
 
-const Image = styled(Img)`
+const Image = styled.img`
   width: 80%;
   height: auto;
   border-radius: 50%;
@@ -89,7 +90,7 @@ const About = ({ data }) => {
           })}
         </Skills>
       </AboutContainer>
-      <Image fluid={frontmatter.avatar.childImageSharp.fluid} alt="Avatar" />
+      <Image src={AvatarImage} alt="Avatar" />
     </Container>
   );
 };
