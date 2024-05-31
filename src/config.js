@@ -1,13 +1,31 @@
 module.exports = {
   siteTitle: 'Rohan Shukla | Software Engineer',
   siteDescription:
-    'Rohan Shukla is a Software Engineer based in Mumbai, India who is specialized in building websites, applications, and everything in between.',
-  siteKeywords:
-    ['Rohan Shukla', 'Rohan', 'Shukla', 'rohanshukla', 'shuklarohan', 'software engineer', 'application engineer', 'full-stack', 'developer', 'software developer', 'full-stack engineer', 'mern stack', 'web developer', 'javascript', 'mumbai', 'india'],
-  siteUrl: 'https://rohanshukla.co/',
+    'Rohan Shukla is a Software Engineer based in Pune, India who is specialized in building websites, applications, and everything in between.',
+  siteKeywords: [
+    'Rohan Shukla',
+    'Rohan',
+    'Shukla',
+    'rohanshukla',
+    'shuklarohan',
+    'software engineer',
+    'application engineer',
+    'full-stack',
+    'developer',
+    'software developer',
+    'full-stack engineer',
+    'mern stack',
+    'web developer',
+    'web architect',
+    'javascript',
+    'mumbai',
+    'pune',
+    'india',
+  ],
+  siteUrl: 'https://rohanshukla.netlify.app/',
   siteLanguage: 'en_US',
   name: 'Rohan Shukla',
-  location: 'Mumbai, India',
+  location: 'Pune, India',
   email: 'errohanshukla@gmail.com',
   github: 'https://github.com/rohanshukla',
   googleAnalyticsID: 'UA-172173386-1',
@@ -28,26 +46,26 @@ module.exports = {
     {
       name: 'Contact',
       url: '/#contact',
-    }
+    },
   ],
 
   socialLinks: [
     {
       name: 'GitHub',
-      url: 'https://github.com/rohanshukla'
+      url: 'https://github.com/rohanshukla',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/shuklarohan/'
+      url: 'https://www.linkedin.com/in/shuklarohan/',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/rohanshukla'
-    }
+      url: 'https://www.instagram.com/rohanshukla',
+    },
   ],
 
   colors: {
     darkBG: '#010a17',
-    background: '#09182e'
-  }
+    background: '#09182e',
+  },
 };

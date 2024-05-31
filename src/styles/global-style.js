@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         background-color: ${({ theme }) => theme.colors.background};
         color: ${({ theme }) => theme.colors.slate};
-        line-height: 1.3;
+        /* line-height: 1.3; */
         font-family: ${({ theme }) => theme.fonts.main};
 
         /* background: repeating-linear-gradient(to right, #010a17, #010a17 5px, #09182e 5px, #09182e 20px); */
@@ -30,6 +30,6 @@ const GlobalStyles = createGlobalStyle`
         fill: currentColor;
         vertical-align: middle;
     }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

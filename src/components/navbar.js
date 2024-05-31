@@ -1,30 +1,30 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import { navLinks } from '../config'
-import { respondTo } from "../styles/_respondTo"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import { navLinks } from '../config';
+import { respondTo } from '../styles/_respondTo';
 
 const Container = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: ${({ theme }) => theme.colors.lightBackground};
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 70%;
-    z-index: 19;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    transition: transform 0.3s ease-in-out;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: ${({ theme }) => theme.colors.lightBackground};
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70%;
+  z-index: 19;
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
 
-    ${respondTo.sm`
+  ${respondTo.sm`
         width: 50%;
     `}
 
-    ${respondTo.md`
+  ${respondTo.md`
         flex-flow: row nowrap;
         align-items: center;
         background-color: transparent;
@@ -40,46 +40,42 @@ const Container = styled.ul`
     `}
 
     li {
-        margin: 15px 0;
-        color: ${({ theme }) => theme.colors.lightestSlate};
-        ${respondTo.md`
+    margin: 15px 0;
+    color: ${({ theme }) => theme.colors.lightestSlate};
+    ${respondTo.md`
             padding: 0 20px;
             &:hover {
             color: ${({ theme }) => theme.colors.accent};
             }
         `}
-    }
-`
+  }
+`;
 
 const LinkItems = styled(Link)`
-    text-decoration: none;
-    color: inherit;
-    font-size: ${({ theme }) => theme.fontSizes.lg};
-    ${respondTo.lg`
+  text-decoration: none;
+  color: inherit;
+  font-size: ${({ theme }) => theme.fontSizes.lg};
+  ${respondTo.lg`
         font-size: ${({ theme }) => theme.fontSizes.md};
     `}
-`
+`;
 
 const Navbar = ({ open, setOpen }) => {
-    return (
-        <>
-            <Container open={open}>
-                {
-                    navLinks.map((data, index) => {
-                        return (
-                            <li key={index}>
-                                <LinkItems
-                                    to={data.url}
-                                    onClick={() => setOpen(!open)}>
-                                    {data.name}
-                                </LinkItems>
-                            </li>
-                        )
-                    })
-                }
-            </Container>
-        </>
-    )
-}
+  return (
+    <>
+      <Container open={open}>
+        {navLinks.map((data, index) => {
+          return (
+            <li key={index}>
+              <LinkItems to={data.url} onClick={() => setOpen(!open)}>
+                {data.name}
+              </LinkItems>
+            </li>
+          );
+        })}
+      </Container>
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;

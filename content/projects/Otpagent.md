@@ -5,7 +5,7 @@ github: 'https://github.com/rohanshukla/otp-agent'
 url: 'https://www.npmjs.com/package/otp-agent'
 tech:
   - Nodejs
-  - JavaScript
+  - TypeScript
 show: true
 ---
 
