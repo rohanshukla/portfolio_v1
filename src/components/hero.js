@@ -4,7 +4,7 @@ import { respondTo } from '../styles/_respondTo';
 import { email } from '../config';
 
 const Container = styled.div`
-  padding: 20px 0;
+  padding: 5px 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
