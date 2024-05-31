@@ -19,27 +19,30 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.1.4",
-    "gatsby": "^5.13.6",
-    "gatsby-plugin-google-analytics": "^5.13.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.22.15",
+    "gatsby-image": "^2.4.7",
+    "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-offline": "^6.13.2",
-    "gatsby-plugin-react-helmet": "^6.13.1",
-    "gatsby-plugin-robots-txt": "^1.8.0",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-plugin-styled-components": "^6.13.1",
-    "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-transformer-remark": "^6.13.1",
-    "lottie-web": "^5.12.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "gatsby-plugin-manifest": "^2.4.18",
+    "gatsby-plugin-offline": "^3.2.17",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-robots-txt": "^1.5.1",
+    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-plugin-sitemap": "^2.4.11",
+    "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-source-filesystem": "^2.3.10",
+    "gatsby-transformer-remark": "^2.8.14",
+    "gatsby-transformer-sharp": "^2.5.5",
+    "lottie-web": "^5.6.10",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
