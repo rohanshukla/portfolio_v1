@@ -3,7 +3,7 @@ startDate: '2021-11-01'
 company: Globant
 title: Senior Software Engineer
 location: Pune, India
-duration: Nov 2021 - Present
+duration: Nov 2021 - Sep 2024
 url: https://www.globant.com/
 ---
 
