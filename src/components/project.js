@@ -48,7 +48,7 @@ const Icons = styled.div`
     a {
       text-decoration: none;
       svg {
-        width: 18px;
+        width: 23px;
         height: auto;
         color: ${({ theme }) => theme.colors.lightSlate};
         margin: 0 10px;

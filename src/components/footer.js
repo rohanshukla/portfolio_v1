@@ -15,7 +15,7 @@ const SocialContainer = styled.div`
   margin: 30px 0;
   svg {
     margin: 0 10px;
-    height: 18px;
+    height: 23px;
     width: auto;
     color: ${({ theme }) => theme.colors.lightSlate};
     :hover {
@@ -50,7 +50,7 @@ const StyledRepoInfo = styled.div`
   }
   svg {
     display: inline-block;
-    height: 15px;
+    height: 18px;
     width: auto;
   }
 `;
