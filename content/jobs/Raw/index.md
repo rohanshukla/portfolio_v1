@@ -7,10 +7,10 @@ duration: Oct 2019 - Oct 2021
 url: https://www.raweng.com/
 ---
 
-Lead the development and architecture of platform like content management systems, REST APIs, and continuous integration pipelines to fulfill business requirement.
+Led the development and architecture of platforms including content management systems, REST APIs, and continuous integration pipelines to meet business requirements.
 
-Built and shipped reusable React components using the custom hooks and used Redux toolkit as global state management.
+Developed and deployed reusable React components utilizing custom hooks and managed global state with Redux Toolkit.
 
-Revamped the frontend to new design with React v17 and migrated existing API endpoint to Nest.js architecture.
+Redesigned the frontend with React v17 and migrated existing API endpoints to a Nest.js architecture.
 
-Cached the backend APIs using Fastly servers to reduce server costs, manage load balancers, and enhance edge network performance.
+Implemented caching for backend APIs using Fastly servers to reduce server costs, manage load balancers, and enhance edge network performance.

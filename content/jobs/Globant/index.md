@@ -7,14 +7,14 @@ duration: Nov 2021 - Sep 2024
 url: https://www.globant.com/
 ---
 
-Building React JSX elements with styled-components that are fully compatible with A11y.
+Developed React JSX elements using styled-components, ensuring full compatibility with accessibility standards (A11y).
 
-Writing test cases for all the features including component, API’s and methods using Jest and React testing library.
+Authored comprehensive test cases for features, components, APIs, and methods utilizing Jest and React Testing Library.
 
-Constructing custom decorators, filters, and validation pipes in NestJs in order to manage exceptions and authentication.
+Designed and implemented custom decorators, filters, and validation pipes in NestJs to manage exceptions and authentication processes.
 
-Work alongside product & project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2-week) cadence.
+Collaborated with product managers, project managers, designers, and engineers to translate creative concepts into polished digital experiences within an agile (2-week) sprint cycle.
 
-Worked on a variety of tasks that required code restructuring or improvements to specific functions as a sole contributor.
+Executed code restructuring and function improvements as a sole contributor on various tasks.
 
-Using the Single-SPA micro-frontend to build the project application and configuring webpack and Jest config as and when required.
+Utilized Single-SPA micro-frontend architecture to build the project application, configuring Webpack and Jest as necessary.

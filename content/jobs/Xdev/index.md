@@ -7,8 +7,8 @@ duration: Aug 2017 - Sep 2019
 url: http://xdevstudios.com
 ---
 
-Build, style, and ship high quality websites, mobile apps, and cross platform digital experiences for a diverse array of clients using technologies such as JavaScript, Nodejs, React, MongoDB, PostgreSQL, Firebase.
+Developed and maintained high-quality websites, mobile applications, and cross-platform digital experiences for a diverse client base using technologies such as JavaScript, Node.js, React, MongoDB, PostgreSQL, and Firebase.
 
-Created numerous backend API services with a modern, reliable, and performant architecture.
+Designed and implemented numerous backend API services with modern, reliable, and high-performance architecture.
 
-Provide input to the development team regarding key features, solution gap’s, and desired enhancements.
+Collaborated with the development team to provide insights on key features, identify solution gaps, and suggest enhancements to improve overall product quality.
