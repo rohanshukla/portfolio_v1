@@ -9,4 +9,4 @@ tech:
 show: true
 ---
 
-OTP(One-Time-Password) generator for JavaScript.
+A JavaScript package for creating one-time passwords (OTPs), including custom OTPs, TOTP, and HOTP.
