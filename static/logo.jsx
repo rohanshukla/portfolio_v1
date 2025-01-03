@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Logo = ({ width, height, margin, padding, fillColor }) => (
+const Logo = ({ width, margin, padding, fillColor }) => (
     <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         preserveAspectRatio="xMidYMid meet"
         viewBox="239.574714322197 -624.4367816092044 81.09375 42"
-        width={width || '111'}
-        height={height || '63'}
+        width={width || '100'}
+        height="auto"
         style={{ margin: margin || 0, padding: padding || 0 }}
     >
         <defs>

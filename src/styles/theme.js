@@ -1,10 +1,16 @@
 import { hex2rgba } from '../utils';
 
+/* const ACCENT = '#FF6F61'; // Coral
+const DARK_BG = '#121212'; // Darker Gray
+const BG = '#1E1E1E'; // Dark Gray
+const LIGHT_BG = '#F5F5F5'; // Light Gray
+const LIGHT_ACCENT = '#FFB6C1'; // Light Pink */
+
 const ACCENT = '#04e2e8'; /* 05dfd7 fed426 04e2e8 */
 const DARK_BG = '#010a17';
 const BG = '#09182e';
 const LIGHT_BG = '#f4f4f9';
-const LIGHT_ACCENT = '#007acc';
+const LIGHT_ACCENT = '#FF8C42';
 
 const defaultTheme = {
   fonts: {

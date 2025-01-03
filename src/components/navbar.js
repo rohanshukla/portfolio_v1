@@ -60,7 +60,6 @@ const LinkItems = styled(Link)`
         font-size: ${({ theme }) => theme.fontSizes.md};
     `}
 `;
-
 const Switch = styled.div`
   display: flex;
   align-items: center;
@@ -78,13 +77,13 @@ const Switch = styled.div`
 `;
 
 const Toggle = styled.div`
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background-color: ${({ theme }) => theme.colors.secondarySlate};
   border-radius: 50%;
   position: absolute;
-  top: 1px;
-  left: ${({ isOn }) => (isOn ? 'calc(100% - 19px)' : '1px')};
+  top: 2px;
+  left: ${({ isOn }) => (isOn ? 'calc(100% - 18px)' : '2px')}; // Adjusted to center the toggle
   transition: left 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 `;
