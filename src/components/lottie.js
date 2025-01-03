@@ -1,29 +1,31 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 
-class LottieControl extends React.Component {
-  componentDidMount() {
-    //call the loadAnimation to start the animation
-    lottie.loadAnimation({
-      container: this.animBox,
+const LottieControl = ({ animationData, width }) => {
+  const animBox = useRef(null);
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animBox.current,
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      animationData: this.props.animationData,
+      animationData: animationData,
     });
-  }
+    return () => {
+      anim.destroy();
+    };
+  }, [animationData]);
 
-  render() {
-    return (
-      <div
-        style={{
-          width: this.props.width ? this.props.width : '100%',
-          margin: '0 auto',
-        }}
-        ref={(ref) => (this.animBox = ref)}
-      ></div>
-    );
-  }
-}
+  return (
+    <div
+      style={{
+        width: width ? width : '100%',
+        margin: '0 auto',
+      }}
+      ref={animBox}
+    ></div>
+  );
+};
 
 export default LottieControl;

@@ -6,7 +6,7 @@ const IconFolder = () => (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-folder2-open"
+    className="bi bi-folder2-open"
     viewBox="0 0 16 16"
   >
     <title>Folder</title>

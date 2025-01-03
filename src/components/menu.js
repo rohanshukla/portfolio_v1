@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Burger } from './';
-import Logo from '../../static/logo.svg';
+import Logo from '../../static/logo';
+import { lightTheme, theme } from '../styles/theme';
+import { getTheme } from '../utils';
 
 const Container = styled.nav`
   width: 90%;
@@ -20,10 +22,6 @@ const Container = styled.nav`
 const LinkItems = styled(Link)`
   text-decoration: none;
   color: inherit;
-`;
-
-const LogoImage = styled.img`
-  height: 35px;
 `;
 
 class Menu extends Component {
@@ -69,7 +67,11 @@ class Menu extends Component {
     return (
       <Container visible={this.state.visible}>
         <LinkItems to="/">
-          <LogoImage src={Logo} alt="Logo" />
+          <Logo
+            fillColor={
+              getTheme() === 'light' ? lightTheme.colors.accent : theme.colors.accent
+            }
+          />
         </LinkItems>
         <Burger />
       </Container>

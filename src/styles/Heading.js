@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { respondTo } from './_respondTo';
 
 const Heading = styled.h2`
-  color: ${({ theme }) => theme.colors.lightestSlate};
+  color: ${({ theme }) => theme.colors.secondarySlate};
   margin-bottom: ${({ margin }) => (margin ? margin : '30px')};
   &:after {
     display: inline-block;

@@ -44,6 +44,7 @@ module.exports = {
           'roboto mono',
           'Poppins:400,400i,700,700i',
           'Lato:400,400i,700,700i',
+          'Pacifico',
         ],
         display: 'swap',
       },

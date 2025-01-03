@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { navLinks } from '../config';
 import { respondTo } from '../styles/_respondTo';
+import { getTheme } from '../utils';
 
 const Container = styled.ul`
   list-style: none;
@@ -41,7 +42,7 @@ const Container = styled.ul`
 
     li {
     margin: 15px 0;
-    color: ${({ theme }) => theme.colors.lightestSlate};
+    color: ${({ theme }) => theme.colors.secondarySlate};
     ${respondTo.md`
             padding: 0 20px;
             &:hover {
@@ -60,7 +61,55 @@ const LinkItems = styled(Link)`
     `}
 `;
 
+const Switch = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+  background-color: ${({ theme, isOn }) =>
+    isOn ? theme.colors.accent : theme.colors.lightBackground};
+  border-radius: 15px;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 15px 0; // Added margin to match the gap of menu items
+`;
+
+const Toggle = styled.div`
+  width: 18px;
+  height: 18px;
+  background-color: ${({ theme }) => theme.colors.secondarySlate};
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: ${({ isOn }) => (isOn ? 'calc(100% - 19px)' : '1px')};
+  transition: left 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+`;
+
 const Navbar = ({ open, setOpen }) => {
+  const [isOn, setIsOn] = useState(() => {
+    const savedTheme = getTheme();
+    return savedTheme ? false : true;
+  });
+
+  useEffect(() => {
+    if (!isOn) {
+      sessionStorage.setItem('theme', 'light');
+    } else {
+      sessionStorage.removeItem('theme');
+    }
+  }, [isOn]);
+
+  const handleToggle = () => {
+    setIsOn(!isOn);
+    setTimeout(() => {
+      window.location.reload();
+    }, 300); // Delay to allow the toggle animation to complete
+  };
+
   return (
     <>
       <Container open={open}>
@@ -73,6 +122,9 @@ const Navbar = ({ open, setOpen }) => {
             </li>
           );
         })}
+        <Switch isOn={isOn} onClick={handleToggle}>
+          <Toggle isOn={isOn} />
+        </Switch>
       </Container>
     </>
   );

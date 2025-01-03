@@ -6,7 +6,7 @@ const IconExternal = () => (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-link-45deg"
+    className="bi bi-link-45deg"
     viewBox="0 0 16 16"
   >
     <title>External Link</title>

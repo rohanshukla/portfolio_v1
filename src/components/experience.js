@@ -1,8 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { respondTo } from '../styles/_respondTo';
 import InlineLink from '../styles/inlineLink';
 import Heading from '../styles/Heading';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const Container = styled.section`
   display: flex;
@@ -12,8 +23,8 @@ const Container = styled.section`
   padding: 20px 0;
   min-height: 100vh;
   ${respondTo.sm`
-        margin-top: 0;
-    `}
+    margin-top: 0;
+  `}
 `;
 
 const Timeline = styled.div`
@@ -29,10 +40,10 @@ const Timeline = styled.div`
     background: ${({ theme }) => theme.colors.accent};
   }
   ${respondTo.md`
-        &:before {
-            left: 50%;
-        }   
-    `}
+    &:before {
+      left: 50%;
+    }   
+  `}
 `;
 
 const Companies = styled.ul`
@@ -45,6 +56,7 @@ const Company = styled.li`
   position: relative;
   padding: 0 20px;
   margin-bottom: 50px;
+  animation: ${fadeIn} 0.5s ease-in-out;
   &:nth-child(odd):before,
   &:nth-child(even):before {
     content: '';
@@ -62,36 +74,39 @@ const Company = styled.li`
     text-align: left;
   }
   ${respondTo.md`
-        width: 50%;
-        margin-bottom: 30px;
-        padding: 0 40px;
-        box-sizing: border-box;
-        &:nth-child(odd) {
-            float: left;
-            text-align: right;
-            clear: both;
-        }
-        &:nth-child(even) {
-            float: right;
-            text-align: left;
-            clear: both;
-        }
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    &:nth-child(odd) {
+      float: left;
+      text-align: right;
+      clear: both;
+    }
+    &:nth-child(even) {
+      float: right;
+      text-align: left;
+      clear: both;
+    }
 
-        /* Circle style on Line */
-        &:nth-child(odd):before {
-            left: auto;
-            right: -6px;
-        }
-        &:nth-child(even):before {
-            left: -4px;
-        }
-    `}
+    &:nth-child(odd):before {
+      left: auto;
+      right: -6px;
+    }
+    &:nth-child(even):before {
+      left: -4px;
+    }
+  `}
+  &:hover > div {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
 `;
 
 const Content = styled.div`
   h3 {
     font-size: ${({ theme }) => theme.fontSizes.lg};
-    color: ${({ theme }) => theme.colors.lightestSlate};
+    color: ${({ theme }) => theme.colors.secondarySlate};
   }
   div {
     p {

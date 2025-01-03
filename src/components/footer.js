@@ -17,7 +17,7 @@ const SocialContainer = styled.div`
     margin: 0 10px;
     height: 23px;
     width: auto;
-    color: ${({ theme }) => theme.colors.lightSlate};
+    color: ${({ theme }) => theme.colors.primarySlate};
     :hover {
       color: ${({ theme }) => theme.colors.accent};
     }
@@ -26,7 +26,7 @@ const SocialContainer = styled.div`
 
 const RepoLink = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.lightSlate};
+  color: ${({ theme }) => theme.colors.primarySlate};
   font-size: ${({ theme }) => theme.fontSizes.smish};
   line-height: 1;
   letter-spacing: 1px;

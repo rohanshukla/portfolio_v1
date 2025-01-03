@@ -1,7 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import Theme from './src/styles/theme';
+import { ThemeToggle } from './src/components/themeToggle';
 
 export const wrapRootElement = ({ element }) => {
-  return <ThemeProvider theme={Theme}>{element}</ThemeProvider>;
+  return <ThemeToggle>{element}</ThemeToggle>;
 };

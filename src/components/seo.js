@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import Theme from '../styles/theme';
+import { theme as Theme } from '../styles/theme';
 
-const SEO = ({ title, description, meta, lang }) => {
+const SEO = ({ title, description = '', meta = [], lang = `en` }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -72,12 +72,6 @@ const SEO = ({ title, description, meta, lang }) => {
       ].concat({ name: `keywords`, content: metaKeyword.join(',') })}
     />
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
 };
 
 SEO.propTypes = {

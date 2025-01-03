@@ -19,7 +19,7 @@ const Content = styled.div`
   line-height: 1.3;
 
   h1 {
-    color: ${({ theme }) => theme.colors.lightestSlate};
+    color: ${({ theme }) => theme.colors.secondarySlate};
     font-size: 35px;
     margin-top: 5px;
     ${respondTo.sm`
