@@ -60,6 +60,7 @@ const LinkItems = styled(Link)`
         font-size: ${({ theme }) => theme.fontSizes.md};
     `}
 `;
+
 const Switch = styled.div`
   display: flex;
   align-items: center;
@@ -68,24 +69,45 @@ const Switch = styled.div`
   background-color: ${({ theme, isOn }) =>
     isOn ? theme.colors.accent : theme.colors.lightBackground};
   border-radius: 15px;
-  width: 40px;
-  height: 20px;
+  width: 55px;
+  height: 25px;
   position: relative;
-  transition: background-color 0.3s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 15px 0; // Added margin to match the gap of menu items
+  margin: 15px 0;
+  ${respondTo.md`
+        margin: 15px 0 15px 20px;
+    `}
+
+  &:hover {
+    background-color: ${({ theme, isOn }) =>
+      isOn ? theme.colors.accentHover : theme.colors.lightBackgroundHover};
+    transform: scale(1.05);
+  }
 `;
 
 const Toggle = styled.div`
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: ${({ theme }) => theme.colors.secondarySlate};
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: ${({ isOn }) => (isOn ? 'calc(100% - 18px)' : '2px')}; // Adjusted to center the toggle
+  top: 2.5px;
+  left: ${({ isOn }) => (isOn ? 'calc(100% - 22.5px)' : '2.5px')};
   transition: left 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+`;
+
+const Label = styled.span`
+  font-size: 10px;
+  color: ${({ theme, isOn }) =>
+    isOn ? theme.colors.lightBackground : theme.colors.secondarySlate};
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  ${({ isOn }) => (isOn ? 'left: 5px;' : 'right: 5px;')}
 `;
 
 const Navbar = ({ open, setOpen }) => {
@@ -123,6 +145,9 @@ const Navbar = ({ open, setOpen }) => {
         })}
         <Switch isOn={isOn} onClick={handleToggle}>
           <Toggle isOn={isOn} />
+          <Label isOn={isOn}>
+            <strong>{isOn ? 'Dark' : 'Light'}</strong>
+          </Label>
         </Switch>
       </Container>
     </>

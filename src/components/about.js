@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { respondTo } from '../styles/_respondTo';
 import InlineLink from '../styles/inlineLink';
@@ -42,7 +42,7 @@ const Content = styled.div`
     `}
 `;
 
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
   width: 80%;
   height: auto;
   border-radius: 50%;
@@ -78,6 +78,7 @@ const List = styled.li`
 
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
+  const image = getImage(frontmatter.avatar);
   return (
     <Container id="about">
       <AboutContainer>
@@ -89,7 +90,7 @@ const About = ({ data }) => {
           })}
         </Skills>
       </AboutContainer>
-      <Image fluid={frontmatter.avatar.childImageSharp.fluid} alt="Avatar" />
+      <Image image={image} alt="Avatar" />
     </Container>
   );
 };

@@ -69,7 +69,9 @@ class Menu extends Component {
         <LinkItems to="/">
           <Logo
             fillColor={
-              getTheme() === 'light' ? lightTheme.colors.accent : theme.colors.accent
+              getTheme() === 'light'
+                ? lightTheme.colors.accent
+                : theme.colors.accent
             }
           />
         </LinkItems>

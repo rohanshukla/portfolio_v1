@@ -47,7 +47,9 @@ const ProjectCard = styled.div`
   color: ${({ theme }) => theme.colors.accent};
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   &:hover {
     animation: ${hoverEffect} 0.6s ease-in-out infinite;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -69,7 +71,9 @@ const IconLinks = styled.div`
         height: auto;
         color: ${({ theme }) => theme.colors.primarySlate};
         margin: 0 10px;
-        transition: color 0.3s, transform 0.3s;
+        transition:
+          color 0.3s,
+          transform 0.3s;
         &:hover {
           color: ${({ theme }) => theme.colors.accent};
           transform: scale(1.1);
@@ -145,9 +149,7 @@ const Project = ({ data }) => (
             </IconLinks>
             <div>
               <ProjectTitle>{title}</ProjectTitle>
-              <ProjectDescription
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+              <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
             </div>
             <ProjectTechList>
               {tech.map((item, index) => (
