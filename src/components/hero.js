@@ -5,7 +5,7 @@ import { email } from '../config';
 
 const Container = styled.div`
   padding: 5px 0;
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
   display: flex;
   align-items: center;
 `;
