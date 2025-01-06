@@ -37,7 +37,7 @@ class Menu extends Component {
   componentDidMount() {
     this.setState(
       {
-        prevScrollpos: window.pageYOffset,
+        prevScrollpos: window.scrollY,
       },
       () => {
         window.addEventListener('scroll', this.handleScroll);
@@ -54,8 +54,8 @@ class Menu extends Component {
   handleScroll = () => {
     const { prevScrollpos } = this.state;
 
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
+    const currentScrollPos = window.scrollY;
+    const visible = prevScrollpos > currentScrollPos || currentScrollPos === 0;
 
     this.setState({
       prevScrollpos: currentScrollPos,

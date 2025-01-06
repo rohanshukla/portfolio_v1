@@ -4,4 +4,4 @@ name: Rohan Shukla
 subtitle: I like building web applications
 ---
 
-I'm a Software Engineer based in Pune, India who is specialized in building websites, web applications, mobile apps and everything that lives on the internet. I build pixel-perfect, engaging, and accessible digital experiences.
+I'm a software engineer from India, specializing in building websites, web apps, mobile apps, and digital experiences that are pixel-perfect, engaging, and accessible.
