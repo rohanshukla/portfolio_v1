@@ -108,6 +108,7 @@ const Label = styled.span`
   top: 50%;
   transform: translateY(-50%);
   ${({ isOn }) => (isOn ? 'left: 5px;' : 'right: 5px;')}
+  transition: color 0.3s ease-in-out;
 `;
 
 const Navbar = ({ open, setOpen }) => {
