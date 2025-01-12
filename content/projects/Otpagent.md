@@ -6,7 +6,8 @@ url: 'https://www.npmjs.com/package/otp-agent'
 tech:
   - Nodejs
   - TypeScript
+  - Jest
 show: true
 ---
 
-A JavaScript package for creating one-time passwords (OTPs), including custom OTPs, TOTP, and HOTP.
+A JavaScript package for generating one-time passwords (OTPs), including custom OTPs, TOTP, HOTP, and recovery codes.
