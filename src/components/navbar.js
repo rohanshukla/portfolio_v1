@@ -61,6 +61,33 @@ const LinkItems = styled(Link)`
     `}
 `;
 
+const ResumeButton = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.secondarySlate};
+  border: 2px solid ${({ theme }) => theme.colors.accent};
+  padding: 7px 14px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  font-size: ${({ theme }) => theme.fontSizes.sm};
+  margin: 15px 0;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    border: 2px solid ${({ theme }) => theme.colors.accent};
+    color: ${({ theme }) => theme.colors.accent};
+    background-color: ${({ theme }) => theme.colors.lightBackgroundHover};
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  ${respondTo.md`
+    margin: 0 10px;
+    background-color: ${({ theme }) => theme.colors.lightBackground};
+    border: 2px solid ${({ theme }) => theme.colors.lightBackground};
+  `}
+`;
+
 const Switch = styled.div`
   display: flex;
   align-items: center;
@@ -144,6 +171,12 @@ const Navbar = ({ open, setOpen }) => {
             </li>
           );
         })}
+        <ResumeButton
+          href="/Rohan Shukla Resume Full-Stack.pdf"
+          target="_blank"
+        >
+          Resume
+        </ResumeButton>
         <Switch isOn={isOn} onClick={handleToggle}>
           <Toggle isOn={isOn} />
           <Label isOn={isOn}>
