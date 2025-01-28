@@ -7,9 +7,9 @@ duration: Sep 2024 - Present
 url: https://nielseniq.com/global/en/industries/tech-and-durables/
 ---
 
-Managed the Files Repository system, ensuring secure file uploads/downloads and organized categorization.
+Managed the Files Repository system, ensuring secure uploads/downloads, organized categorization, and maintained an ADR for tracking architectural decisions.
 
-Developed and integrated MFE and BFF components for seamless user experience, implementing access control and file retention policies using GCP.
+Developed and integrated MFE and BFF components for a seamless user experience, with access control and file retention policies on GCP
 
 Enabled clients to export large CSV files and generate presentation-style reports on the GfK Newron platform for comprehensive analysis.
 

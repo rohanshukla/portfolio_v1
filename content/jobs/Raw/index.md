@@ -11,4 +11,4 @@ Spearheaded development and architecture for CMS platforms, REST APIs, and CI pi
 
 Overhauled frontend architecture with React v17 and transitioned API endpoints to Nest.js.
 
-Optimized backend performance by implementing API caching with Fastly, reducing server costs, and enhancing load balancer management.
+Optimized backend performance, reduced server costs, and improved load balancer management by implementing API caching with Fastly.
