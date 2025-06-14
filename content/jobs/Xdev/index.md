@@ -7,8 +7,8 @@ duration: Aug 2017 - Sep 2019
 url: http://xdevstudios.com
 ---
 
-Created and maintained web and mobile apps using JavaScript, Node.js, React, MongoDB, PostgreSQL, and Firebase.
+- Created and maintained web and mobile apps using JavaScript, Node.js, React, MongoDB, PostgreSQL, and Firebase.
 
-Designed and implemented high-performance backend API services.
+- Designed and implemented high-performance backend API services.
 
-Collaborated with the development team to enhance key features, identify gaps, and suggest improvements.
+- Collaborated with the development team to enhance key features, identify gaps, and suggest improvements.

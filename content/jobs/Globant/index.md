@@ -7,10 +7,10 @@ duration: Nov 2021 - Sep 2024
 url: https://www.globant.com/
 ---
 
-Developed and styled React JSX elements for A11y compliance; authored test cases using Jest and React Testing Library.
+- Developed and styled React JSX elements for A11y compliance; authored test cases using Jest and React Testing Library.
 
-Designed and implemented custom decorators, filters, and validation pipes in NestJs to manage exceptions and authentication processes.
+- Designed and implemented custom decorators, filters, and validation pipes in NestJs to manage exceptions and authentication processes.
 
-Executed code restructuring and function improvements as a sole contributor on various tasks.
+- Executed code restructuring and function improvements as a sole contributor on various tasks.
 
-Worked with different teams to turn creative ideas into polished digital experiences in 2-week agile sprints.
+- Worked with different teams to turn creative ideas into polished digital experiences in 2-week agile sprints.

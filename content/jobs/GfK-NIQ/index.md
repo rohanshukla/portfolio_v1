@@ -7,12 +7,12 @@ duration: Sep 2024 - Present
 url: https://nielseniq.com/global/en/industries/tech-and-durables/
 ---
 
-Managed the Files Repository system, ensuring secure uploads/downloads, organized categorization, and maintained an ADR for tracking architectural decisions.
+- Designed, built, and maintained the Files Repository system, implementing secure file uploads/downloads, robust categorization, and documented key technical decisions with ADRs.
 
-Developed and integrated MFE and BFF components for a seamless user experience, with access control and file retention policies on GCP
+- Designed and integrated Micro Frontend (MFE) and Backend-for-Frontend (BFF) components, including automated cron jobs for cleaning soft-deleted files from GCP storage and databases.
 
-Enabled clients to export large CSV files and generate presentation-style reports on the GfK Newron platform for comprehensive analysis.
+- Empowered clients to export large CSVs and generate presentation-style reports in the GfK Newron platform by integrating market data and specialized endpoints for deep data analysis.
 
-Implemented CI pipelines using GitLab for streamlined development and deployment processes.
+- Contributed to CI/CD automation by updating GitLab YAML files and Helm charts to support scalable GCP deployments.
 
-Created a design system with Storybook to develop generic components for various MFE.
+- Developed a reusable design system with Storybook, supporting generic component development across multiple MFEs.

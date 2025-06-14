@@ -98,12 +98,13 @@ const Company = styled.li`
     }
   `}
   &:hover > div {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
   }
 `;
 
 const Content = styled.div`
+  padding: 0 15px;
   h3 {
     font-size: ${({ theme }) => theme.fontSizes.lg};
     color: ${({ theme }) => theme.colors.secondarySlate};

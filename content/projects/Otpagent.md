@@ -10,4 +10,4 @@ tech:
 show: true
 ---
 
-A JavaScript package for generating one-time passwords (OTPs), including custom OTPs, TOTP, HOTP, and recovery codes.
+A JavaScript package for generating one-time passwords (OTPs), including custom OTPs, TOTP, HOTP, and recovery codes. Ideal for secure authentication.
