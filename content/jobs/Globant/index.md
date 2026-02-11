@@ -9,8 +9,8 @@ url: https://www.globant.com/
 
 - Developed and styled React JSX elements for A11y compliance; authored test cases using Jest and React Testing Library.
 
-- Designed and implemented custom decorators, filters, and validation pipes in NestJs to manage exceptions and authentication processes.
+- Enhanced and implemented custom decorators, filters, and validation pipes in NestJs to manage exceptions and authentication processes.
 
 - Executed code restructuring and function improvements as a sole contributor on various tasks.
 
-- Worked with different teams to turn creative ideas into polished digital experiences in 2-week agile sprints.
+- Developed a reusable design system with Storybook, supporting generic component development across multiple MFEs.
