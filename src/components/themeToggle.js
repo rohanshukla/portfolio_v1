@@ -2,7 +2,6 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme as Theme, lightTheme as LightTheme } from '../styles/theme';
-import GlobalStyles from '../styles/global-style';
 import { getTheme } from '../utils';
 
 const getInitialTheme = () => {
@@ -37,7 +36,6 @@ export const ThemeToggle = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
       {children}
     </ThemeProvider>
   );

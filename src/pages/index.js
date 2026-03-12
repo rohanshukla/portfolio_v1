@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import GlobalStyles from '../styles/global-style';
+
 import {
   Layout,
   Seo,
@@ -20,6 +22,7 @@ const ContentWrapper = styled.div`
 const IndexPage = ({ location, data }) => {
   return (
     <>
+      <GlobalStyles />
       <Seo />
       <Menu />
       <Layout location={location}>
