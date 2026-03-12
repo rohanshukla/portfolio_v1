@@ -1,14 +1,27 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+    :root {
+        --background: #09182e;
+        --text: #9aa3c0;
+        --font: ${({ theme }) => theme.fonts.main};
+    }
+
+    html[data-theme='light'] {
+        --background: #ffffff;
+        --text: #5a5a5a;
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
+
     html {
         scroll-behavior: smooth;
     }
+
     body {
         margin: 0;
         width: 100%;
@@ -16,10 +29,10 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
-        background-color: ${({ theme }) => theme.colors.background};
-        color: ${({ theme }) => theme.colors.slate};
+        background-color: var(--background);
+        color: var(--text);
         /* line-height: 1.3; */
-        font-family: ${({ theme }) => theme.fonts.main};
+        font-family: var(--font);
 
         /* background: repeating-linear-gradient(to right, #010a17, #010a17 5px, #09182e 5px, #09182e 20px); */
     }
