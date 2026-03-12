@@ -2,7 +2,7 @@
 module.exports = {
   siteTitle: 'Rohan Shukla | Software Engineer',
   siteDescription:
-    'Rohan Shukla is a Software Engineer based in Pune, India who is specialized in building websites, applications, and everything in between.',
+    'Rohan Shukla is a Software Engineer from India, specializing in building websites, applications, and digital experiences that are pixel-perfect, engaging, and accessible. He also develops AI agents, integrating MCP servers to create smarter, context-aware solutions.',
   siteKeywords: [
     'Rohan Shukla',
     'Rohan',
@@ -18,7 +18,9 @@ module.exports = {
     'mern stack',
     'web developer',
     'web architect',
+    'solutions architect',
     'javascript',
+    'ai agent developer',
     'mumbai',
     'pune',
     'india',

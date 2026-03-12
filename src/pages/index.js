@@ -19,17 +19,19 @@ const ContentWrapper = styled.div`
 
 const IndexPage = ({ location, data }) => {
   return (
-    <Layout location={location}>
+    <>
       <Seo />
       <Menu />
-      <ContentWrapper>
-        <Hero data={data.hero.edges} />
-        <About data={data.about.edges} />
-        <Experience data={data.experience.edges} />
-        <Project data={data.projects.edges} />
-      </ContentWrapper>
-      <Footer />
-    </Layout>
+      <Layout location={location}>
+        <ContentWrapper>
+          <Hero data={data.hero.edges} />
+          <About data={data.about.edges} />
+          <Experience data={data.experience.edges} />
+          <Project data={data.projects.edges} />
+        </ContentWrapper>
+        <Footer />
+      </Layout>
+    </>
   );
 };
 

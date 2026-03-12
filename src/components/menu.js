@@ -7,7 +7,9 @@ import { lightTheme, theme } from '../styles/theme';
 import { getTheme } from '../utils';
 
 const Container = styled.nav`
-  width: 90%;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
   height: 75px;
   display: flex;
   justify-content: space-between;

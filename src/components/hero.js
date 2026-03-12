@@ -65,7 +65,7 @@ const AboutContainer = styled.div`
         }
     `}
   ${respondTo.md`
-        width: 55%;
+        width: 60%;
         p {
             font-size: 17.5px;
         }

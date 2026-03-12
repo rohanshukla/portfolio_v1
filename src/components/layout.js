@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import GlobalStyles from '../../src/styles/global-style';
 
 const Container = styled.div`
   width: 90%;
@@ -25,7 +24,6 @@ const Layout = ({ children, location }) => {
 
   return (
     <Container id="root">
-      <GlobalStyles />
       {children}
     </Container>
   );

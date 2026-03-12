@@ -16,6 +16,9 @@ skills:
   - PostgreSQL
   - Firebase
   - Figma
+  - OpenAI Agent
+  - Google ADK
+  - MCP Servers
 ---
 
 Hello! I'm Rohan, a Software Engineer based in Pune, India.
