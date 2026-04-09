@@ -172,7 +172,7 @@ const Navbar = ({ open, setOpen }) => {
           );
         })}
         <ResumeButton
-          href="/Resume - Rohan Shukla.pdf"
+          href="/Resume-Rohan_Shukla.pdf"
           target="_blank"
         >
           Resume
