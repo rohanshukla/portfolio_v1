@@ -7,8 +7,10 @@ duration: Oct 2019 - Oct 2021
 url: https://www.raweng.com/
 ---
 
-- Spearheaded development and architecture for the Digital Fan Experience Platform (DFEP), including CMS platforms, REST APIs, and CI pipelines to meet dynamic business requirements.
+- Spearheaded architecture for the Digital Fan Experience Platform (DFEP), including CMS and CI pipelines.
 
-- Overhauled frontend architecture with React v17 and transitioned API endpoints to Nest.js.
+- Overhauled frontend architecture using React v17 and migrated legacy API endpoints to NestJs.
 
-- Optimized backend performance, reduced server costs, and improved load balancer management by implementing API caching with Fastly.
+- Implemented edge-side API caching with Fastly, reducing server costs by 30% and significantly decreasing latency.
+
+- Built a Golang POC optimizing peak-duration traffic to reduce server infrastructure costs.

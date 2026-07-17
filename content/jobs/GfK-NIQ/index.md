@@ -7,12 +7,14 @@ duration: Sep 2024 - Present
 url: https://nielseniq.com/global/en/industries/tech-and-durables/
 ---
 
-- Architected and maintained a secure Files Repository system with reliable file uploads/downloads, robust categorization, and documented key technical decisions using ADRs.
+- Architected a secure enterprise Files Repository system using ADR governance for strict technical compliance.
 
 - Designed and integrated Micro Frontend (MFE) and Backend-for-Frontend (BFF) components, including automated cron jobs for cleaning soft-deleted files from GCP storage and databases.
 
-- Empowered clients to export large CSVs and generate presentation-style reports in the GfK Newron platform by integrating market data and specialized endpoints for deep data analysis.
+- Enabled large-scale CSV exports and presentation-style reporting within the GfK Newron platform.
 
 - Contributed to CI/CD automation by updating GitLab YAML files and Helm charts to support scalable GCP deployments.
 
-- Integrated Prometheus with Express middleware to expose application metrics, and visualized them in Grafana dashboards.
+- Integrated Prometheus with Express middleware to expose metrics and visualized data via Grafana.
+
+- Collaborated on an internal AI Documentation Agent using the GitHub Copilot SDK and MCP to automatically update repository documentation upon PR merges.
